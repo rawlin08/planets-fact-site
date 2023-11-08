@@ -55,12 +55,11 @@ app-heading {
     justify-content: space-between;
     align-items: center;
 }
-app-overview {
+app-overview, app-internal, app-geology {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 app-bottom-tabs {
     display: flex;
