@@ -21,7 +21,30 @@ import { PlanetComponent } from './planet.component';
     <p>{{ planetComponent.planet.temperature }}</p>
   </div>
   `,
-  styles: [``]
+  styles: [`
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border: 1px solid var(--dark-gray);
+  }
+  h3 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.727px;
+    color: var(--white);
+    opacity: 0.5;
+  }
+  p {
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.75px;
+    font-weight: 400;
+  }
+  `]
 })
 export class BottomTabsComponent {
   constructor(public planetComponent: PlanetComponent) {}
