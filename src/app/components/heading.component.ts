@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-heading',
   template: `
   <h1>THE PLANETS</h1>
-  <app-menu></app-menu>
   `,
   styles: [`
   h1 {
