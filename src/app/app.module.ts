@@ -10,6 +10,7 @@ import { OverviewComponent } from './components/overview.component';
 import { InternalComponent } from './components/internal.component';
 import { GeologyComponent } from './components/geology.component';
 import { OptionsComponent } from './components/options.component';
+import { BottomTabsComponent } from './components/bottom-tabs.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { OptionsComponent } from './components/options.component';
     OverviewComponent,
     InternalComponent,
     GeologyComponent,
-    OptionsComponent
+    OptionsComponent,
+    BottomTabsComponent
   ],
   imports: [
     BrowserModule,
