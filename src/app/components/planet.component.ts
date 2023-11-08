@@ -8,15 +8,13 @@ import * as planetData from 'src/assets/data.json';
   <header>
     <app-heading></app-heading>
   </header>
-  <app-options></app-options>
-  <router-outlet></router-outlet>
-  <app-bottom-tabs></app-bottom-tabs>
+  <main>
+    <app-options></app-options>
+    <router-outlet></router-outlet>
+    <app-bottom-tabs></app-bottom-tabs>
+  </main>
   `,
   styles: [`
-  header {
-    padding: 20px;
-    border-bottom: 2px solid var(--dark-gray);
-  }
   `]
 })
 export class PlanetComponent implements OnInit {
