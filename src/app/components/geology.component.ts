@@ -16,10 +16,17 @@ import { PlanetComponent } from './planet.component';
   `,
   styles: [`
   .images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
   }
   .images > img:last-child {
     position: absolute;
+    width: 75px;
+    height: auto;
+    margin: 0;
+    top: 185px;
   }
   h2, p {
     text-align: center;
