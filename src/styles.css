@@ -45,3 +45,29 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* COMPONENTS */
+app-planets, app-options {
+    display: block;
+}
+app-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+app-overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+app-bottom-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'League Spartan', sans-serif;
+}
+app-overview, app-internal, app-geology, app-bottom-tabs {
+    padding: 20px;
+}
