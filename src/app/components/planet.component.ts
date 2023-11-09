@@ -8,14 +8,16 @@ import * as planetData from 'src/assets/data.json';
   <header>
     <app-heading></app-heading>
   </header>
+  <app-menu *ngIf="menuOpened == true"></app-menu>
   <main>
-    <app-options></app-options>
-    <router-outlet></router-outlet>
-    <app-bottom-tabs></app-bottom-tabs>
+    <div *ngIf="menuOpened == false">
+      <app-options></app-options>
+      <router-outlet></router-outlet>
+      <app-bottom-tabs></app-bottom-tabs>
+    </div>
   </main>
   `,
-  styles: [`
-  `]
+  styles: [``]
 })
 export class PlanetComponent implements OnInit {
   constructor(public route: ActivatedRoute, public router: Router) {}
@@ -32,4 +34,14 @@ export class PlanetComponent implements OnInit {
   uid:any;
   data:any;
   planet:any;
+  menuOpened:boolean = false;
+
+  toggleMenu() {
+    if (this.menuOpened == false) {
+      this.menuOpened = true;
+    }
+    else {
+      this.menuOpened = false;
+    }
+  }
 }
