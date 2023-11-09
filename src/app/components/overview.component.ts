@@ -39,7 +39,6 @@ import { PlanetComponent } from './planet.component';
   }
   a {
     text-decoration: underline;
-    font-weight: 700;
   }
   img {
     width: 111px;
