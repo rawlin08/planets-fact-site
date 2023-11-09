@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { PlanetComponent } from './planet.component';
 
 @Component({
   selector: 'app-options',
   template: `
-  <a routerLink="./overview" routerLinkActive="activeLink">OVERVIEW</a>
-  <a routerLink="./internal" routerLinkActive="activeLink">STRUCTURE</a>
-  <a routerLink="./geology" routerLinkActive="activeLink">SURFACE</a>
+  <a routerLink="./overview" routerLinkActive="activeLink" #rlaoverview="routerLinkActive" [style]="rlaoverview.isActive ? 'border-bottom: 3px solid' + planetComponent.planet.color : ''">OVERVIEW</a>
+  <a routerLink="./internal" routerLinkActive="activeLink" #rlainternal="routerLinkActive" [style]="rlainternal.isActive ? 'border-bottom: 3px solid' + planetComponent.planet.color : ''">STRUCTURE</a>
+  <a routerLink="./geology" routerLinkActive="activeLink" #rlageology="routerLinkActive" [style]="rlageology.isActive ? 'border-bottom: 3px solid' + planetComponent.planet.color : ''">SURFACE</a>
   `,
   styles: [`
   a {
@@ -17,11 +18,10 @@ import { Component } from '@angular/core';
     padding: 20px 0;
   }
   .activeLink {
-    border-bottom: 3px solid var(--light-blue);
     opacity: 1;
   }
   `]
 })
 export class OptionsComponent {
-
+  constructor(public planetComponent: PlanetComponent) {}
 }
