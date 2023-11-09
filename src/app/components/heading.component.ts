@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-heading',
   template: `
   <h1>THE PLANETS</h1>
+  <img src="assets/images/icons/icon-hamburger.svg" alt="">
   `,
   styles: [`
   h1 {
