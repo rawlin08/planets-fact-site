@@ -12,6 +12,7 @@
     --dark-orange: #CD5120;
     --mint: #1EC2A4;
     --blue: #2D68F0;
+    --image-div-height: 304px;
 }
 html {
     font-family: 'Antonio', sans-serif;
@@ -74,7 +75,8 @@ app-bottom-tabs {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 0 25px 25px 25px;
 }
-app-overview, app-internal, app-geology, app-bottom-tabs {
-    padding: 25px;
+app-overview, app-internal, app-geology {
+    padding: 0 25px;
 }
