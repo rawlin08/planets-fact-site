@@ -8,7 +8,10 @@ import { PlanetComponent } from './planet.component';
   <div>
     <h2>{{ planetComponent.planet.name }}</h2>
     <p>{{ planetComponent.planet.structure.content }}</p>
-    <p>Source: <a [href]="planetComponent.planet.structure.source">Wikipedia</a></p>
+    <div class="source">
+      <p>Source : <a [href]="planetComponent.planet.structure.source">Wikipedia</a></p>
+      <img id="source" src="assets/images/icons/icon-source.svg" alt="">
+    </div>
   </div>
   `,
   styles: [`
@@ -30,7 +33,7 @@ import { PlanetComponent } from './planet.component';
   div > p:nth-child(2) {
     margin: 16px 0 32px 0;
   }
-  div > p:last-child {
+  .source > p {
     font-size: 12px;
     opacity: 0.5;
   }
@@ -42,7 +45,19 @@ import { PlanetComponent } from './planet.component';
     width: 111px;
     height: auto;
     margin: 100px 0;
-  }`]
+  }
+  #source {
+    width: 12px;
+    margin: 0;
+  }
+  .source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 28px 0;
+    gap: 5px;
+  }
+  `]
 })
 export class InternalComponent {
   constructor(public planetComponent: PlanetComponent) {}
