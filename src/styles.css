@@ -48,8 +48,12 @@ a {
 }
 
 /* COMPONENTS */
-app-planets {
+app-planets, app-menu {
     display: block;
+}
+app-menu {
+    background-color: var(--black);
+    height: calc(100vh - 70px);
 }
 app-heading {
     display: flex;
