@@ -44,6 +44,17 @@ import { PlanetComponent } from './planet.component';
     letter-spacing: -0.75px;
     font-weight: 400;
   }
+
+  // TABLET STYLES
+  @media (min-width: 768px) {
+    div {
+      display: block;
+      padding: 15px;
+    }
+    h3 {
+      margin: 0 0 10px 0;
+    }
+  }
   `]
 })
 export class BottomTabsComponent {
