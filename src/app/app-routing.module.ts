@@ -6,6 +6,7 @@ import { InternalComponent } from './components/internal.component';
 import { GeologyComponent } from './components/geology.component';
 
 const routes: Routes = [
+  { path: 'planets/:planet', redirectTo: 'planets/:planet/overview' },
   { path: 'planets/:planet', title: 'Planets', component: PlanetComponent, children: [
     {
       path: 'overview',
@@ -19,7 +20,9 @@ const routes: Routes = [
       path: 'geology',
       component: GeologyComponent,
     },
-  ] }
+  ]},
+  { path: '', redirectTo: 'planets/mercury/overview', pathMatch: 'full' },
+  { path: '**', redirectTo: 'planets/mercury/overview' }
 ];
 
 @NgModule({
