@@ -76,11 +76,32 @@ app-overview, app-internal, app-geology {
     align-items: center;
 }
 app-bottom-tabs {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 10px;
     padding: 0 25px 25px 25px;
 }
 app-overview, app-internal, app-geology {
     padding: 0 25px;
+}
+
+/* TABLET STYLES */
+@media (min-width: 768px) {
+    app-heading {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        padding: 32px 51px;
+    }
+    app-options {
+        display: none;
+    }
+    app-overview, app-internal, app-geology {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    app-bottom-tabs {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
