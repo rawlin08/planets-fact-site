@@ -74,7 +74,7 @@ app-overview, app-internal, app-geology {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 25px;
+    padding: 0 25px 25px 25px;
 }
 app-bottom-tabs {
     display: grid;
@@ -95,7 +95,6 @@ app-bottom-tabs {
     }
     app-bottom-tabs {
         grid-template-columns: repeat(4, 1fr);
-        margin: 10px 0 0 0;
     }
 }
 
@@ -110,11 +109,11 @@ app-bottom-tabs {
     app-overview, app-internal, app-geology {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        padding: 75px 165px 0 165px;
+        gap: 10px;
+        padding: 75px 165px 50px 165px;
     }
     app-bottom-tabs {
         padding: 0 165px 56px 165px;
         gap: 30px;
-        margin: 0;
     }
 }
