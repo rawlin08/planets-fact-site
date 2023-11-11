@@ -67,7 +67,7 @@ import { PlanetComponent } from './planet.component';
     text-decoration: underline;
   }
   img {
-    width: 111px;
+    width: 150px;
     height: auto;
   }
   #source {
@@ -85,6 +85,9 @@ import { PlanetComponent } from './planet.component';
   @media (min-width: 768px) {
     .img {
       height: 400px;
+    }
+    img {
+      width: 200px;
     }
     h2, p {
       text-align: left;
@@ -122,6 +125,9 @@ import { PlanetComponent } from './planet.component';
   
   /* DESKTOP STYLES */
   @media (min-width: 1281px) {
+    img {
+      width: 300px;
+    }
     .main {
       display: flex;
       flex-direction: column;

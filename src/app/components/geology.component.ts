@@ -77,7 +77,7 @@ import { PlanetComponent } from './planet.component';
     text-decoration: underline;
   }
   img {
-    width: 111px;
+    width: 150px;
     height: auto;
   }
   #source {
@@ -96,8 +96,12 @@ import { PlanetComponent } from './planet.component';
     .images {
       height: 400px;
     }
+    img {
+      width: 200px;
+    }
     .images > img:last-child {
-      top: 230px;
+      width: 100px;
+      top: 250px;
     }
     h2, p {
       text-align: left;
@@ -134,10 +138,17 @@ import { PlanetComponent } from './planet.component';
 
   /* DESKTOP STYLES */
   @media (min-width: 1281px) {
+    img {
+      width: 300px;
+    }
+    .images > img:last-child {
+      width: 110px;
+      top: 315px;
+    }
     .main {
       display: flex;
       flex-direction: column;
-      gap: 0;
+      gap: 40px;
     }
     .tabs {
       align-self: normal;
@@ -148,9 +159,6 @@ import { PlanetComponent } from './planet.component';
     .images {
       margin: 0 40px 0 0;
       height: 100%;
-    }
-    .images > img:last-child {
-      top: 245px;
     }
   }
   `]
