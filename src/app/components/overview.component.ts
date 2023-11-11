@@ -36,6 +36,7 @@ import { PlanetComponent } from './planet.component';
   .img {
     display: grid;
     place-content: center;
+    height: 304px;
   }
   .tabs {
     display: none;
@@ -68,7 +69,6 @@ import { PlanetComponent } from './planet.component';
   img {
     width: 111px;
     height: auto;
-    margin: 100px 0;
   }
   #source {
     width: 12px;
@@ -83,6 +83,9 @@ import { PlanetComponent } from './planet.component';
 
   /* TABLET STYLES */
   @media (min-width: 768px) {
+    .img {
+      height: 400px;
+    }
     h2, p {
       text-align: left;
     }
@@ -128,7 +131,7 @@ import { PlanetComponent } from './planet.component';
       font-size: 70px;
     }
     .tabs {
-      margin: 0;
+      align-self: normal;
     }
     .img {
       margin: 0 40px 0 0;

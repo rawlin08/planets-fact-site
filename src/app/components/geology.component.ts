@@ -39,6 +39,7 @@ import { PlanetComponent } from './planet.component';
     align-items: center;
     justify-content: center;
     position: relative;
+    height: 304px;
   }
   .images > img:last-child {
     position: absolute;
@@ -78,7 +79,6 @@ import { PlanetComponent } from './planet.component';
   img {
     width: 111px;
     height: auto;
-    margin: 100px 0;
   }
   #source {
     width: 12px;
@@ -93,6 +93,12 @@ import { PlanetComponent } from './planet.component';
 
   /* TABLET STYLES */
   @media (min-width: 768px) {
+    .images {
+      height: 400px;
+    }
+    .images > img:last-child {
+      top: 230px;
+    }
     h2, p {
       text-align: left;
     }
@@ -133,6 +139,9 @@ import { PlanetComponent } from './planet.component';
       flex-direction: column;
       gap: 0;
     }
+    .tabs {
+      align-self: normal;
+    }
     h2 {
       font-size: 70px;
     }
@@ -141,7 +150,7 @@ import { PlanetComponent } from './planet.component';
       height: 100%;
     }
     .images > img:last-child {
-      top: 260px;
+      top: 245px;
     }
   }
   `]
