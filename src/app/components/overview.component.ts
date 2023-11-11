@@ -4,7 +4,9 @@ import { PlanetComponent } from './planet.component';
 @Component({
   selector: 'app-overview',
   template: `
-  <img [src]="planetComponent.planet.images.planet" alt="">
+  <div class="img">
+    <img [src]="planetComponent.planet.images.planet" alt="">
+  </div>
   <div class="main">
     <div class="content">
       <h2>{{ planetComponent.planet.name }}</h2>
@@ -31,6 +33,10 @@ import { PlanetComponent } from './planet.component';
   </div>
   `,
   styles: [`
+  .img {
+    display: grid;
+    place-content: center;
+  }
   .tabs {
     display: none;
   }
@@ -72,7 +78,6 @@ import { PlanetComponent } from './planet.component';
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 28px 0;
     gap: 5px;
   }
 
@@ -117,13 +122,17 @@ import { PlanetComponent } from './planet.component';
     .main {
       display: flex;
       flex-direction: column;
-      gap: 0;
-    }
-    .tabs {
-      margin: 0 0 67px 0;
+      gap: 40px;
     }
     h2 {
       font-size: 70px;
+    }
+    .tabs {
+      margin: 0;
+    }
+    .img {
+      margin: 0 40px 0 0;
+      height: 100%;
     }
   }
   `]
