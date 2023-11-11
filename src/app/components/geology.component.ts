@@ -17,20 +17,7 @@ import { PlanetComponent } from './planet.component';
         <img id="source" src="assets/images/icons/icon-source.svg" alt="">
       </div>
     </div>
-    <div class="tabs">
-      <a class="tab" [routerLink]="'/planets/' + planetComponent.planet.name + '/overview'" routerLinkActive="activeLink" #rlaoverview="routerLinkActive" [style.background-color]="rlaoverview.isActive ? planetComponent.planet.color : ''">
-        <p>01</p>
-        <p>OVERVIEW</p>
-      </a>
-      <a class="tab" [routerLink]="'/planets/' + planetComponent.planet.name + '/internal'" routerLinkActive="activeLink" #rlainternal="routerLinkActive" [style.background-color]="rlainternal.isActive ? planetComponent.planet.color : ''">
-        <p>02</p>
-        <p>INTERNAL STRUCTURE</p>
-      </a>
-      <a class="tab" [routerLink]="'/planets/' + planetComponent.planet.name + '/geology'" routerLinkActive="activeLink" #rlageology="routerLinkActive" [style.background-color]="rlageology.isActive ? planetComponent.planet.color : ''">
-        <p>03</p>
-        <p>SURFACE GEOLOGY</p>
-      </a>
-    </div>
+    <app-tabs></app-tabs>
   </div>
   `,
   styles: [`
@@ -48,7 +35,7 @@ import { PlanetComponent } from './planet.component';
     margin: 0;
     top: 185px;
   }
-  .tabs {
+  app-tabs {
     display: none;
   }
   h2, p {
@@ -109,30 +96,14 @@ import { PlanetComponent } from './planet.component';
     .source {
       justify-content: flex-start;
     }
-    .tabs {
+    app-tabs {
       display: block;
       align-self: center;
-    }
-    .tab {
-      display: flex;
-      align-items: center;
-      border: 1px solid var(--dark-gray);
-      padding: 8px 20px;
-      gap: 20px;
-      text-decoration: none;
-    }
-    .tab:nth-child(2) {
-      margin: 20px 0;
     }
     .main {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 70px;
-    }
-    a > p {
-      font-weight: 400;
-      letter-spacing: 2px;
-      font-size: 11px;
     }
   }
 
@@ -150,7 +121,7 @@ import { PlanetComponent } from './planet.component';
       flex-direction: column;
       gap: 40px;
     }
-    .tabs {
+    app-tabs {
       align-self: normal;
     }
     h2 {
