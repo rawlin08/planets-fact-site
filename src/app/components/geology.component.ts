@@ -30,7 +30,7 @@ import { PlanetComponent } from './planet.component';
   }
   .images > img:last-child {
     position: absolute;
-    width: 75px;
+    width: 85px;
     height: auto;
     margin: 0;
     top: 185px;
@@ -64,7 +64,7 @@ import { PlanetComponent } from './planet.component';
     text-decoration: underline;
   }
   img {
-    width: 150px;
+    width: 200px;
     height: auto;
   }
   #source {
@@ -84,7 +84,7 @@ import { PlanetComponent } from './planet.component';
       height: 400px;
     }
     img {
-      width: 200px;
+      width: 300px;
     }
     .images > img:last-child {
       width: 100px;
@@ -110,11 +110,11 @@ import { PlanetComponent } from './planet.component';
   /* DESKTOP STYLES */
   @media (min-width: 1281px) {
     img {
-      width: 300px;
+      width: 400px;
     }
     .images > img:last-child {
-      width: 110px;
-      top: 275px;
+      width: 150px;
+      top: 300px;
     }
     .main {
       display: flex;
