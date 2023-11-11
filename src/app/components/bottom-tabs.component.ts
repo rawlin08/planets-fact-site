@@ -39,7 +39,7 @@ import { PlanetComponent } from './planet.component';
   }
   p {
     font-family: 'Antonio', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: -0.75px;
     font-weight: 400;
