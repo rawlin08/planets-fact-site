@@ -45,7 +45,7 @@ import { PlanetComponent } from './planet.component';
     width: 75px;
     height: auto;
     margin: 0;
-    top: 260px;
+    top: 185px;
   }
   .tabs {
     display: none;
@@ -88,7 +88,6 @@ import { PlanetComponent } from './planet.component';
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 28px 0;
     gap: 5px;
   }
 
@@ -139,6 +138,9 @@ import { PlanetComponent } from './planet.component';
     .images {
       margin: 0 40px 0 0;
       height: 100%;
+    }
+    .images > img:last-child {
+      top: 260px;
     }
   }
   `]
