@@ -114,7 +114,7 @@ import { PlanetComponent } from './planet.component';
     }
     .images > img:last-child {
       width: 110px;
-      top: 315px;
+      top: 275px;
     }
     .main {
       display: flex;
