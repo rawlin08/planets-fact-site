@@ -45,7 +45,7 @@ import { PlanetComponent } from './planet.component';
     font-weight: 400;
   }
 
-  // TABLET STYLES
+  /* TABLET STYLES */
   @media (min-width: 768px) {
     div {
       display: block;
