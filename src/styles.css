@@ -74,14 +74,12 @@ app-overview, app-internal, app-geology {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 25px;
 }
 app-bottom-tabs {
     display: grid;
     gap: 10px;
     padding: 0 25px 25px 25px;
-}
-app-overview, app-internal, app-geology {
-    padding: 0 25px;
 }
 
 /* TABLET STYLES */
@@ -95,13 +93,28 @@ app-overview, app-internal, app-geology {
     app-options {
         display: none;
     }
-    app-overview, app-internal, app-geology {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     app-bottom-tabs {
         grid-template-columns: repeat(4, 1fr);
+        margin: 10px 0 0 0;
+    }
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 1281px) {
+    app-heading {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 22px 32px;
+    }
+    app-overview, app-internal, app-geology {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 75px 165px 0 165px;
+    }
+    app-bottom-tabs {
+        padding: 0 165px 56px 165px;
+        gap: 30px;
+        margin: 0;
     }
 }

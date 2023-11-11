@@ -55,6 +55,13 @@ import { PlanetComponent } from './planet.component';
       margin: 0 0 10px 0;
     }
   }
+
+  /* DESKTOP STYLES */
+  @media (min-width: 1281px) {
+    p {
+      font-size: 40px;
+    }
+  }
   `]
 })
 export class BottomTabsComponent {

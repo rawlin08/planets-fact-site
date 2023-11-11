@@ -110,6 +110,21 @@ import { PlanetComponent } from './planet.component';
       font-size: 11px;
     }
   }
+
+  /* DESKTOP STYLES */
+  @media (min-width: 1281px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .tabs {
+      margin: 0 0 67px 0;
+    }
+    h2 {
+      font-size: 70px;
+    }
+  }
   `]
 })
 export class InternalComponent {

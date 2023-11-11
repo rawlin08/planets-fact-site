@@ -45,6 +45,14 @@ import * as planetData from 'src/assets/data.json';
       letter-spacing: 1px;
     }
   }
+
+  /* DESKTOP STYLES */
+  @media (min-width: 1281px) {
+    .options {
+      width: auto;
+      gap: 33px;
+    }
+  }
   `]
 })
 export class HeadingComponent implements OnInit {
