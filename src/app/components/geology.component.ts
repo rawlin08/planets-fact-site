@@ -101,6 +101,7 @@ import { PlanetComponent } from './planet.component';
     }
     .tabs {
       display: block;
+      align-self: center;
     }
     .tab {
       display: flex;

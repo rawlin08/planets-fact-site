@@ -91,7 +91,7 @@ import { PlanetComponent } from './planet.component';
     }
     .tabs {
       display: block;
-      margin: 56px 0 0 0;
+      align-self: center;
     }
     .tab {
       display: flex;
