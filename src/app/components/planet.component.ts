@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 import * as planetData from 'src/assets/data.json';
 
@@ -37,6 +37,15 @@ export class PlanetComponent implements OnInit {
   data:any;
   planet:any;
   menuOpened:boolean = false;
+  innerWidth: any;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.innerWidth = event.target.innerWidth;
+    if (this.innerWidth >= 768) {
+      this.menuOpened = false;
+    }
+  }
 
   toggleMenu() {
     if (this.menuOpened == false) {
