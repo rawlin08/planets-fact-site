@@ -21,8 +21,8 @@ const routes: Routes = [
       component: GeologyComponent,
     },
   ]},
-  { path: '', redirectTo: 'planets/mercury/overview', pathMatch: 'full' },
-  { path: '**', redirectTo: 'planets/mercury/overview' }
+  { path: '', redirectTo: 'planets/Mercury/overview', pathMatch: 'full' },
+  { path: '**', redirectTo: 'planets/Mercury/overview' }
 ];
 
 @NgModule({
