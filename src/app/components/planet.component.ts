@@ -29,7 +29,7 @@ export class PlanetComponent implements OnInit {
       this.data = planetData;
       this.planet = this.data[0].find((element:any) => element.name == capitalized);
       if (!this.planet) {
-        this.router.navigate([`/planets/mercury/overview`]);
+        this.router.navigate([`/planets/Mercury/overview`]);
       }
     });
   }
